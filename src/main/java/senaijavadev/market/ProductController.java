@@ -5,11 +5,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @Controller // Indica que a classe é uma classe controller
-@RequestMapping (path = "/product") // Indica que a url vai começar com /product (após o caminho da aplicacao)
+@RequestMapping (path = "/api/product") // Indica que a url vai começar com /product (após o caminho da aplicacao)
+@CrossOrigin("*")
 public class ProductController {
 
     @Autowired
-    private ProductRepository pRepository;
+    ProductRepository pRepository;
 
     @PostMapping (path="/add")
     public @ResponseBody String addNewProduct (
