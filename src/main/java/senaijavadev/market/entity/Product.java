@@ -10,12 +10,12 @@ import javax.persistence.Id;
 public class Product {
 
 // Variable declaration
-        @Id
-        @GeneratedValue (strategy = GenerationType.AUTO)
-        private Integer id;
-        private String productName;
-        private String description;
-        private Double value;
+    @Id
+    @GeneratedValue (strategy = GenerationType.AUTO)
+    private Integer id;
+    private String productName;
+    private String description;
+    private Double value;
 
 
 // Id
