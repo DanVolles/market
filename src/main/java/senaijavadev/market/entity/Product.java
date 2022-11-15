@@ -1,4 +1,4 @@
-package senaijavadev.market;
+package senaijavadev.market.entity;
 
 
 import javax.persistence.Entity;
